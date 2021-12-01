@@ -2,6 +2,9 @@
   "name": "js-wagtail-test",
   "version": "0.1.0",
   "private": true,
+  "devDependencies": {
+    "wagtail": "https://github.com/wagtail/wagtail/archive/refs/tags/v2.15.1.tar.gz"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -33,6 +36,11 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!wagtail)/"
     ]
   }
 }
